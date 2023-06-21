@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['inf_2d0990_0',['INF-0990',['../md__r_e_a_d_m_e.html',1,'']]],
-  ['insert_1',['Insert',['../class_map.html#a6ff9fe11efd0d163cbf10277a29bb6a3',1,'Map']]],
-  ['itemmap_2',['ItemMap',['../class_item_map.html',1,'']]]
+  ['h_0',['h',['../class_map.html#a719722cf9ff9a60065ba3189a64f121b',1,'Map']]],
+  ['hasenergy_1',['HasEnergy',['../class_robot.html#a50e016195f79e59918f40f351eb1f2f4',1,'Robot']]]
 ];

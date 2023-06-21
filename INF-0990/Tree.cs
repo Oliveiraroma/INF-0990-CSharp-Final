@@ -7,12 +7,16 @@ public class Tree : Obstacle, Rechargeable {
     /// </summary>
     public Tree() : base("$$ ") {}
     /// <summary>
-    /// Incrementa energia ao estar pressionar "G" junto a árvore.
+    /// Incrementa energia ao pressionar "G" junto a árvore.
     /// </summary>
     public void Recharge(Robot r)
     {
-        r.energy++;
-        r.energy++;
-        r.energy++;
+        r.energy += 3;
+    }
+
+    // Retorna a cor desejada para a Arvore
+    public override ConsoleColor GetForegroundColor()
+    {
+        return ConsoleColor.DarkYellow;
     }
 }

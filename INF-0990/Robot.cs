@@ -23,18 +23,11 @@ public class Robot : ItemMap {
     public void MoveNorth(){
         try
         {
-            if(map.isRadioactive(this.x-1,this.y))
-            {
-                map.Update(this.x, this.y, this.x-1, this.y);
-                this.x--;
-                this.energy-=30;
-            }
-            else
-            {
-                map.Update(this.x, this.y, this.x-1, this.y);
-                this.x--;
-                this.energy--;
-            }
+            IsRadioactiveIn(this.x-1, this.y);
+            map.Update(this.x, this.y, this.x-1, this.y);
+            this.x--;
+            this.energy--;
+            IsRadioactiveAdjacent(this.x, this.y);        
         }
         catch (OccupiedPositionException e)
         {
@@ -55,18 +48,11 @@ public class Robot : ItemMap {
     public void MoveSouth(){
         try
         {
-            if(map.isRadioactive(this.x+1,this.y))
-            {
-                map.Update(this.x, this.y, this.x+1, this.y);
-                this.x++;
-                this.energy-=30;
-            }
-            else
-            {
-                map.Update(this.x, this.y, this.x+1, this.y);
-                this.x++;
-                this.energy--;
-            }
+            IsRadioactiveIn(this.x+1, this.y);
+            map.Update(this.x, this.y, this.x+1, this.y);
+            this.x++;
+            this.energy--;
+            IsRadioactiveAdjacent(this.x, this.y);  
         }
         catch (OccupiedPositionException e)
         {
@@ -86,19 +72,12 @@ public class Robot : ItemMap {
     /// </summary>
     public void MoveEast(){
         try
-        {
-            if(map.isRadioactive(this.x,this.y+1))
-            {
-                map.Update(this.x, this.y, this.x, this.y+1);
-                this.y++;
-                this.energy-=30;
-            }
-            else
-            {
-                map.Update(this.x, this.y, this.x, this.y+1);
-                this.y++;
-                this.energy--;
-            }
+        {  
+            IsRadioactiveIn(this.x, this.y+1);
+            map.Update(this.x, this.y, this.x, this.y+1);
+            this.y++;
+            this.energy--;
+            IsRadioactiveAdjacent(this.x, this.y);     
         }
         catch (OccupiedPositionException e)
         {
@@ -118,19 +97,12 @@ public class Robot : ItemMap {
     /// </summary>
     public void MoveWest(){
         try
-        {
-            if(map.isRadioactive(this.x,this.y-1))
-            {
-                map.Update(this.x, this.y, this.x, this.y-1);
-                this.y--;
-                this.energy-=30;
-            }
-            else
-            {
-                map.Update(this.x, this.y, this.x, this.y-1);
-                this.y--;
-                this.energy--;
-            }
+        { 
+            IsRadioactiveIn(this.x, this.y-1);
+            map.Update(this.x, this.y, this.x, this.y-1);
+            this.y--;
+            this.energy--;
+            IsRadioactiveAdjacent(this.x, this.y);
         }
         catch (OccupiedPositionException e)
         {
@@ -178,5 +150,46 @@ public class Robot : ItemMap {
     public bool HasEnergy()
     {
         return this.energy > 0;
+    }
+    /// <summary>
+    /// Responsável por decrementar energia quando passar por cima de radioativo.
+    /// </summary>
+    public void IsRadioactiveIn(int x, int y)
+    {
+        // Decrementa energia quando passa por cima do elemento radioativo
+        if (map.IsRadioactive(x,y))
+        {
+            energy -= 30;
+        }
+    }
+    /// <summary>
+    /// Responsável por decrementar energia quando passar adjacente a item radioativo.
+    /// </summary>
+    public void IsRadioactiveAdjacent(int x, int y)
+    {
+        // Decrementa energia quando elemento radioativo esta acima
+        if (map.IsRadioactive(x, y - 1))
+        {
+            energy -= 10;
+        }          
+
+        // Decrementa energia quando elemento radioativo esta abaixo
+        if (map.IsRadioactive(x, y + 1))
+        {
+            energy -= 10;
+        }
+
+        // Decrementa energia quando elemento radioativo esta à esquerda
+        if (map.IsRadioactive(x - 1, y))
+        {
+            energy -= 10;
+        }
+
+        // Decrementa energia quando elemento radioativo esta à direita
+        if (map.IsRadioactive(x + 1, y))
+        {
+            energy -= 10;
+        }
+
     }
 }

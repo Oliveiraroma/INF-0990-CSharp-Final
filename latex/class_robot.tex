@@ -1,8 +1,8 @@
-\hypertarget{class_robot}{}\doxysection{Robot Class Reference}
-\label{class_robot}\index{Robot@{Robot}}
+\doxysection{Robot Class Reference}
+\hypertarget{class_robot}{}\label{class_robot}\index{Robot@{Robot}}
 
 
-Classe responsável pelo robo, sua interação com o mapa e os itens.   
+Classe responsável pelo robo, sua interação com o mapa e os itens.  
 
 
 Inheritance diagram for Robot\+:\begin{figure}[H]
@@ -11,47 +11,221 @@ Inheritance diagram for Robot\+:\begin{figure}[H]
 \includegraphics[height=2.000000cm]{class_robot}
 \end{center}
 \end{figure}
-\doxysubsection*{Public Member Functions}
+\doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{class_robot_a587a46db9325cb906a2848c4634a8b7f}\label{class_robot_a587a46db9325cb906a2848c4634a8b7f}} 
-{\bfseries Robot} (\mbox{\hyperlink{class_map}{Map}} map, int x=0, int y=0, int energy=5)
-\begin{DoxyCompactList}\small\item\em Responsável por colocar o robo em sua posição inicial, atribuir energia que inicia o nível.  \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{class_robot_aece1065f74f56f36ebe2ab49c111ac3c}\label{class_robot_aece1065f74f56f36ebe2ab49c111ac3c}} 
-void {\bfseries Move\+North} ()
-\begin{DoxyCompactList}\small\item\em Responsável pela movimentação.  \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{class_robot_af614ee8ec8176f57157bb80dfe4b398f}\label{class_robot_af614ee8ec8176f57157bb80dfe4b398f}} 
-void {\bfseries Move\+South} ()
-\begin{DoxyCompactList}\small\item\em Responsável pela movimentação.  \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{class_robot_abbc64a8c8407f60b13b28f124ca378f7}\label{class_robot_abbc64a8c8407f60b13b28f124ca378f7}} 
-void {\bfseries Move\+East} ()
-\begin{DoxyCompactList}\small\item\em Responsável pela movimentação.  \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{class_robot_a0c9fba01846ea6d8377d7fed4591d24a}\label{class_robot_a0c9fba01846ea6d8377d7fed4591d24a}} 
-void {\bfseries Move\+West} ()
-\begin{DoxyCompactList}\small\item\em Responsável pela movimentação.  \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{class_robot_af06758acca9f2fd9c6234b736ae60d0e}\label{class_robot_af06758acca9f2fd9c6234b736ae60d0e}} 
-void {\bfseries Get} ()
-\begin{DoxyCompactList}\small\item\em Responsável por recarregar a energia do robo.  \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{class_robot_a9f9876e632737fedf586832e7712e1c5}\label{class_robot_a9f9876e632737fedf586832e7712e1c5}} 
-void {\bfseries Print} ()
-\begin{DoxyCompactList}\small\item\em Responsável por imprimir a quantidade de itens, pontos e energia.  \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{class_robot_a50e016195f79e59918f40f351eb1f2f4}\label{class_robot_a50e016195f79e59918f40f351eb1f2f4}} 
-bool {\bfseries Has\+Energy} ()
+\mbox{\hyperlink{class_robot_a587a46db9325cb906a2848c4634a8b7f}{Robot}} (\mbox{\hyperlink{class_map}{Map}} \mbox{\hyperlink{class_robot_ab223ed3a7b95380fa5d0da16ac864265}{map}}, int x=0, int y=0, int \mbox{\hyperlink{class_robot_ad7d9a7fd949f73f86f62e0d5247b212a}{energy}}=5)
+\begin{DoxyCompactList}\small\item\em Responsável por colocar o robo em sua posição inicial, atribuir energia que inicia o nível. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_robot_aece1065f74f56f36ebe2ab49c111ac3c}{Move\+North}} ()
+\begin{DoxyCompactList}\small\item\em Responsável pela movimentação. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_robot_af614ee8ec8176f57157bb80dfe4b398f}{Move\+South}} ()
+\begin{DoxyCompactList}\small\item\em Responsável pela movimentação. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_robot_abbc64a8c8407f60b13b28f124ca378f7}{Move\+East}} ()
+\begin{DoxyCompactList}\small\item\em Responsável pela movimentação. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_robot_a0c9fba01846ea6d8377d7fed4591d24a}{Move\+West}} ()
+\begin{DoxyCompactList}\small\item\em Responsável pela movimentação. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_robot_af06758acca9f2fd9c6234b736ae60d0e}{Get}} ()
+\begin{DoxyCompactList}\small\item\em Responsável por recarregar a energia do robo. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_robot_a9f9876e632737fedf586832e7712e1c5}{Print}} ()
+\begin{DoxyCompactList}\small\item\em Responsável por imprimir a quantidade de itens, pontos e energia. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_robot_a50e016195f79e59918f40f351eb1f2f4}{Has\+Energy}} ()
+\item 
+void \mbox{\hyperlink{class_robot_a8446306189de60007790d530769be795}{Is\+Radioactive\+In}} (int x, int y)
+\begin{DoxyCompactList}\small\item\em Responsável por decrementar energia quando passar por cima de radioativo. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_robot_a0dbb35f6185165fb405e54ce47332889}{Is\+Radioactive\+Adjacent}} (int x, int y)
+\begin{DoxyCompactList}\small\item\em Responsável por decrementar energia quando passar adjacente a item radioativo. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_item_map}{Item\+Map}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_item_map_a23e7de63458c5a2d954cacefa9586604}{Item\+Map}} (string Symbol)
+\item 
+sealed override string \mbox{\hyperlink{class_item_map_abf9189e62cb410e3cae27a6aec700750}{To\+String}} ()
+\item 
+virtual Console\+Color \mbox{\hyperlink{class_item_map_a01847f8f6f269cb764b71b7afafb7c6e}{Get\+Background\+Color}} ()
+\item 
+virtual Console\+Color \mbox{\hyperlink{class_item_map_ae62d43300bdded8c07c7ed6404d7d55e}{Get\+Foreground\+Color}} ()
 \end{DoxyCompactItemize}
-\doxysubsection*{Properties}
+\doxysubsubsection*{Properties}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{class_robot_ab223ed3a7b95380fa5d0da16ac864265}\label{class_robot_ab223ed3a7b95380fa5d0da16ac864265}} 
-\mbox{\hyperlink{class_map}{Map}} {\bfseries map}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\mbox{\hyperlink{class_map}{Map}} \mbox{\hyperlink{class_robot_ab223ed3a7b95380fa5d0da16ac864265}{map}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
 \item 
-\mbox{\Hypertarget{class_robot_ad7d9a7fd949f73f86f62e0d5247b212a}\label{class_robot_ad7d9a7fd949f73f86f62e0d5247b212a}} 
-int {\bfseries energy}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+int \mbox{\hyperlink{class_robot_ad7d9a7fd949f73f86f62e0d5247b212a}{energy}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
 \end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
-Classe responsável pelo robo, sua interação com o mapa e os itens.  
+Classe responsável pelo robo, sua interação com o mapa e os itens. 
+
+Definition at line \mbox{\hyperlink{_robot_8cs_source_l00004}{4}} of file \mbox{\hyperlink{_robot_8cs_source}{Robot.\+cs}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_robot_a587a46db9325cb906a2848c4634a8b7f}\label{class_robot_a587a46db9325cb906a2848c4634a8b7f} 
+\index{Robot@{Robot}!Robot@{Robot}}
+\index{Robot@{Robot}!Robot@{Robot}}
+\doxysubsubsection{\texorpdfstring{Robot()}{Robot()}}
+{\footnotesize\ttfamily Robot.\+Robot (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_map}{Map}}}]{map,  }\item[{int}]{x = {\ttfamily 0},  }\item[{int}]{y = {\ttfamily 0},  }\item[{int}]{energy = {\ttfamily 5} }\end{DoxyParamCaption})}
+
+
+
+Responsável por colocar o robo em sua posição inicial, atribuir energia que inicia o nível. 
+
+
+
+Definition at line \mbox{\hyperlink{_robot_8cs_source_l00013}{13}} of file \mbox{\hyperlink{_robot_8cs_source}{Robot.\+cs}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_robot_af06758acca9f2fd9c6234b736ae60d0e}\label{class_robot_af06758acca9f2fd9c6234b736ae60d0e} 
+\index{Robot@{Robot}!Get@{Get}}
+\index{Get@{Get}!Robot@{Robot}}
+\doxysubsubsection{\texorpdfstring{Get()}{Get()}}
+{\footnotesize\ttfamily void Robot.\+Get (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Responsável por recarregar a energia do robo. 
+
+
+
+Definition at line \mbox{\hyperlink{_robot_8cs_source_l00123}{123}} of file \mbox{\hyperlink{_robot_8cs_source}{Robot.\+cs}}.
+
+\Hypertarget{class_robot_a50e016195f79e59918f40f351eb1f2f4}\label{class_robot_a50e016195f79e59918f40f351eb1f2f4} 
+\index{Robot@{Robot}!HasEnergy@{HasEnergy}}
+\index{HasEnergy@{HasEnergy}!Robot@{Robot}}
+\doxysubsubsection{\texorpdfstring{HasEnergy()}{HasEnergy()}}
+{\footnotesize\ttfamily bool Robot.\+Has\+Energy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_robot_8cs_source_l00150}{150}} of file \mbox{\hyperlink{_robot_8cs_source}{Robot.\+cs}}.
+
+\Hypertarget{class_robot_a0dbb35f6185165fb405e54ce47332889}\label{class_robot_a0dbb35f6185165fb405e54ce47332889} 
+\index{Robot@{Robot}!IsRadioactiveAdjacent@{IsRadioactiveAdjacent}}
+\index{IsRadioactiveAdjacent@{IsRadioactiveAdjacent}!Robot@{Robot}}
+\doxysubsubsection{\texorpdfstring{IsRadioactiveAdjacent()}{IsRadioactiveAdjacent()}}
+{\footnotesize\ttfamily void Robot.\+Is\+Radioactive\+Adjacent (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+Responsável por decrementar energia quando passar adjacente a item radioativo. 
+
+
+
+Definition at line \mbox{\hyperlink{_robot_8cs_source_l00168}{168}} of file \mbox{\hyperlink{_robot_8cs_source}{Robot.\+cs}}.
+
+\Hypertarget{class_robot_a8446306189de60007790d530769be795}\label{class_robot_a8446306189de60007790d530769be795} 
+\index{Robot@{Robot}!IsRadioactiveIn@{IsRadioactiveIn}}
+\index{IsRadioactiveIn@{IsRadioactiveIn}!Robot@{Robot}}
+\doxysubsubsection{\texorpdfstring{IsRadioactiveIn()}{IsRadioactiveIn()}}
+{\footnotesize\ttfamily void Robot.\+Is\+Radioactive\+In (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+Responsável por decrementar energia quando passar por cima de radioativo. 
+
+
+
+Definition at line \mbox{\hyperlink{_robot_8cs_source_l00157}{157}} of file \mbox{\hyperlink{_robot_8cs_source}{Robot.\+cs}}.
+
+\Hypertarget{class_robot_abbc64a8c8407f60b13b28f124ca378f7}\label{class_robot_abbc64a8c8407f60b13b28f124ca378f7} 
+\index{Robot@{Robot}!MoveEast@{MoveEast}}
+\index{MoveEast@{MoveEast}!Robot@{Robot}}
+\doxysubsubsection{\texorpdfstring{MoveEast()}{MoveEast()}}
+{\footnotesize\ttfamily void Robot.\+Move\+East (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Responsável pela movimentação. 
+
+
+
+Definition at line \mbox{\hyperlink{_robot_8cs_source_l00073}{73}} of file \mbox{\hyperlink{_robot_8cs_source}{Robot.\+cs}}.
+
+\Hypertarget{class_robot_aece1065f74f56f36ebe2ab49c111ac3c}\label{class_robot_aece1065f74f56f36ebe2ab49c111ac3c} 
+\index{Robot@{Robot}!MoveNorth@{MoveNorth}}
+\index{MoveNorth@{MoveNorth}!Robot@{Robot}}
+\doxysubsubsection{\texorpdfstring{MoveNorth()}{MoveNorth()}}
+{\footnotesize\ttfamily void Robot.\+Move\+North (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Responsável pela movimentação. 
+
+
+
+Definition at line \mbox{\hyperlink{_robot_8cs_source_l00023}{23}} of file \mbox{\hyperlink{_robot_8cs_source}{Robot.\+cs}}.
+
+\Hypertarget{class_robot_af614ee8ec8176f57157bb80dfe4b398f}\label{class_robot_af614ee8ec8176f57157bb80dfe4b398f} 
+\index{Robot@{Robot}!MoveSouth@{MoveSouth}}
+\index{MoveSouth@{MoveSouth}!Robot@{Robot}}
+\doxysubsubsection{\texorpdfstring{MoveSouth()}{MoveSouth()}}
+{\footnotesize\ttfamily void Robot.\+Move\+South (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Responsável pela movimentação. 
+
+
+
+Definition at line \mbox{\hyperlink{_robot_8cs_source_l00048}{48}} of file \mbox{\hyperlink{_robot_8cs_source}{Robot.\+cs}}.
+
+\Hypertarget{class_robot_a0c9fba01846ea6d8377d7fed4591d24a}\label{class_robot_a0c9fba01846ea6d8377d7fed4591d24a} 
+\index{Robot@{Robot}!MoveWest@{MoveWest}}
+\index{MoveWest@{MoveWest}!Robot@{Robot}}
+\doxysubsubsection{\texorpdfstring{MoveWest()}{MoveWest()}}
+{\footnotesize\ttfamily void Robot.\+Move\+West (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Responsável pela movimentação. 
+
+
+
+Definition at line \mbox{\hyperlink{_robot_8cs_source_l00098}{98}} of file \mbox{\hyperlink{_robot_8cs_source}{Robot.\+cs}}.
+
+\Hypertarget{class_robot_a9f9876e632737fedf586832e7712e1c5}\label{class_robot_a9f9876e632737fedf586832e7712e1c5} 
+\index{Robot@{Robot}!Print@{Print}}
+\index{Print@{Print}!Robot@{Robot}}
+\doxysubsubsection{\texorpdfstring{Print()}{Print()}}
+{\footnotesize\ttfamily void Robot.\+Print (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Responsável por imprimir a quantidade de itens, pontos e energia. 
+
+
+
+Definition at line \mbox{\hyperlink{_robot_8cs_source_l00144}{144}} of file \mbox{\hyperlink{_robot_8cs_source}{Robot.\+cs}}.
+
+
+
+\doxysubsection{Property Documentation}
+\Hypertarget{class_robot_ad7d9a7fd949f73f86f62e0d5247b212a}\label{class_robot_ad7d9a7fd949f73f86f62e0d5247b212a} 
+\index{Robot@{Robot}!energy@{energy}}
+\index{energy@{energy}!Robot@{Robot}}
+\doxysubsubsection{\texorpdfstring{energy}{energy}}
+{\footnotesize\ttfamily int Robot.\+energy\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Definition at line \mbox{\hyperlink{_robot_8cs_source_l00008}{8}} of file \mbox{\hyperlink{_robot_8cs_source}{Robot.\+cs}}.
+
+\Hypertarget{class_robot_ab223ed3a7b95380fa5d0da16ac864265}\label{class_robot_ab223ed3a7b95380fa5d0da16ac864265} 
+\index{Robot@{Robot}!map@{map}}
+\index{map@{map}!Robot@{Robot}}
+\doxysubsubsection{\texorpdfstring{map}{map}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_map}{Map}} Robot.\+map\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Definition at line \mbox{\hyperlink{_robot_8cs_source_l00005}{5}} of file \mbox{\hyperlink{_robot_8cs_source}{Robot.\+cs}}.
+
+
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-Robot.\+cs\end{DoxyCompactItemize}
+INF-\/0990/\mbox{\hyperlink{_robot_8cs}{Robot.\+cs}}\end{DoxyCompactItemize}

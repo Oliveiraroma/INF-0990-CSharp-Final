@@ -3,6 +3,7 @@
 /// </summary>
 public abstract class ItemMap {
     private string Symbol;
+
     public ItemMap(string Symbol)
     {
         this.Symbol = Symbol;
@@ -11,4 +12,14 @@ public abstract class ItemMap {
     {
         return Symbol;
     }
+    public virtual ConsoleColor GetBackgroundColor()
+    {
+        return ConsoleColor.Black;
+    }
+
+    public virtual ConsoleColor GetForegroundColor()
+    {
+        return ConsoleColor.White;
+    }
+
 }

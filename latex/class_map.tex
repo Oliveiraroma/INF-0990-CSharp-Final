@@ -1,48 +1,182 @@
-\hypertarget{class_map}{}\doxysection{Map Class Reference}
-\label{class_map}\index{Map@{Map}}
+\doxysection{Map Class Reference}
+\hypertarget{class_map}{}\label{class_map}\index{Map@{Map}}
 
 
-Classe reponsável pelo Mapa.   
+Classe reponsável pelo Mapa.  
 
 
-\doxysubsection*{Public Member Functions}
+\doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{class_map_a2a52033bc07a7ccc160285a93484513e}\label{class_map_a2a52033bc07a7ccc160285a93484513e}} 
-{\bfseries Map} (int w=10, int h=10, int level=1)
-\begin{DoxyCompactList}\small\item\em Classe reponsável por gerar o mapa com tamanho 10x10. Posteriormente conforme avança, incrementa +1 ao tamanho do mapa, até o limite 30x30.  \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{class_map_a6ff9fe11efd0d163cbf10277a29bb6a3}\label{class_map_a6ff9fe11efd0d163cbf10277a29bb6a3}} 
-void {\bfseries Insert} (\mbox{\hyperlink{class_item_map}{Item\+Map}} Item, int x, int y)
-\begin{DoxyCompactList}\small\item\em Responsável por posicionar itens no mapa dentro da matriz.  \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{class_map_a6559330c824d7967c0c6eb797583e4b9}\label{class_map_a6559330c824d7967c0c6eb797583e4b9}} 
-void {\bfseries Update} (int x\+\_\+old, int y\+\_\+old, int x, int y)
-\begin{DoxyCompactList}\small\item\em Responsável por atualizar o Status do mapa.  \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{class_map_a503c1188981bd56583b4036ef70c67aa}\label{class_map_a503c1188981bd56583b4036ef70c67aa}} 
-List$<$ \mbox{\hyperlink{class_jewel}{Jewel}} $>$ {\bfseries Get\+Jewels} (int x, int y)
-\begin{DoxyCompactList}\small\item\em Responsável por atualizar a quantidade de Jóias coletadas.  \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{class_map_a58b5d5bdae42092eec6502666412ad12}\label{class_map_a58b5d5bdae42092eec6502666412ad12}} 
-\mbox{\hyperlink{interface_rechargeable}{Rechargeable}}? {\bfseries Get\+Rechargeable} (int x, int y)
-\begin{DoxyCompactList}\small\item\em Responsável por incrementar a energia do robo conforme coletados itens válidos.  \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{class_map_aff8e2d6feab4dea63ab4537c0898b303}\label{class_map_aff8e2d6feab4dea63ab4537c0898b303}} 
-void {\bfseries Print} ()
-\item 
-\mbox{\Hypertarget{class_map_a2107d47822831fb927575581bc107f85}\label{class_map_a2107d47822831fb927575581bc107f85}} 
-bool {\bfseries Is\+Done} ()
+\mbox{\hyperlink{class_map_a2a52033bc07a7ccc160285a93484513e}{Map}} (int \mbox{\hyperlink{class_map_a63b4597ab80572da3ea5def454b4eced}{w}}=10, int \mbox{\hyperlink{class_map_a719722cf9ff9a60065ba3189a64f121b}{h}}=10, int level=1)
+\begin{DoxyCompactList}\small\item\em Classe reponsável por gerar o mapa com tamanho 10x10. Posteriormente conforme avança, incrementa +1 ao tamanho do mapa, até o limite 30x30. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_map_a6ff9fe11efd0d163cbf10277a29bb6a3}{Insert}} (\mbox{\hyperlink{class_item_map}{Item\+Map}} Item, int x, int y)
+\begin{DoxyCompactList}\small\item\em Responsável por posicionar itens no mapa dentro da matriz. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_map_a6559330c824d7967c0c6eb797583e4b9}{Update}} (int x\+\_\+old, int y\+\_\+old, int x, int y)
+\begin{DoxyCompactList}\small\item\em Responsável por atualizar o Status do mapa. \end{DoxyCompactList}\item 
+List$<$ Jewel $>$ \mbox{\hyperlink{class_map_a503c1188981bd56583b4036ef70c67aa}{Get\+Jewels}} (int x, int y)
+\begin{DoxyCompactList}\small\item\em Responsável por atualizar a quantidade de Jóias coletadas. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{interface_rechargeable}{Rechargeable}}? \mbox{\hyperlink{class_map_a58b5d5bdae42092eec6502666412ad12}{Get\+Rechargeable}} (int x, int y)
+\begin{DoxyCompactList}\small\item\em Responsável por incrementar a energia do robo conforme coletados itens válidos. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_map_a51d3486f7ca40a787a49125ef2e8809d}{Is\+Radioactive}} (int x, int y)
+\begin{DoxyCompactList}\small\item\em Booleana que verifica o item é Radioativo. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_map_aff8e2d6feab4dea63ab4537c0898b303}{Print}} ()
+\begin{DoxyCompactList}\small\item\em Imprime mapa. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_map_a2107d47822831fb927575581bc107f85}{Is\+Done}} ()
 \end{DoxyCompactItemize}
-\doxysubsection*{Properties}
+\doxysubsubsection*{Properties}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{class_map_a719722cf9ff9a60065ba3189a64f121b}\label{class_map_a719722cf9ff9a60065ba3189a64f121b}} 
-int {\bfseries h}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+int \mbox{\hyperlink{class_map_a719722cf9ff9a60065ba3189a64f121b}{h}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
 \item 
-\mbox{\Hypertarget{class_map_a63b4597ab80572da3ea5def454b4eced}\label{class_map_a63b4597ab80572da3ea5def454b4eced}} 
-int {\bfseries w}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+int \mbox{\hyperlink{class_map_a63b4597ab80572da3ea5def454b4eced}{w}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
 \end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
-Classe reponsável pelo Mapa.  
+Classe reponsável pelo Mapa. 
+
+Definition at line \mbox{\hyperlink{_map_8cs_source_l00004}{4}} of file \mbox{\hyperlink{_map_8cs_source}{Map.\+cs}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_map_a2a52033bc07a7ccc160285a93484513e}\label{class_map_a2a52033bc07a7ccc160285a93484513e} 
+\index{Map@{Map}!Map@{Map}}
+\index{Map@{Map}!Map@{Map}}
+\doxysubsubsection{\texorpdfstring{Map()}{Map()}}
+{\footnotesize\ttfamily Map.\+Map (\begin{DoxyParamCaption}\item[{int}]{w = {\ttfamily 10},  }\item[{int}]{h = {\ttfamily 10},  }\item[{int}]{level = {\ttfamily 1} }\end{DoxyParamCaption})}
+
+
+
+Classe reponsável por gerar o mapa com tamanho 10x10. Posteriormente conforme avança, incrementa +1 ao tamanho do mapa, até o limite 30x30. 
+
+
+
+Definition at line \mbox{\hyperlink{_map_8cs_source_l00013}{13}} of file \mbox{\hyperlink{_map_8cs_source}{Map.\+cs}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_map_a503c1188981bd56583b4036ef70c67aa}\label{class_map_a503c1188981bd56583b4036ef70c67aa} 
+\index{Map@{Map}!GetJewels@{GetJewels}}
+\index{GetJewels@{GetJewels}!Map@{Map}}
+\doxysubsubsection{\texorpdfstring{GetJewels()}{GetJewels()}}
+{\footnotesize\ttfamily List$<$ Jewel $>$ Map.\+Get\+Jewels (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+Responsável por atualizar a quantidade de Jóias coletadas. 
+
+
+
+Definition at line \mbox{\hyperlink{_map_8cs_source_l00059}{59}} of file \mbox{\hyperlink{_map_8cs_source}{Map.\+cs}}.
+
+\Hypertarget{class_map_a58b5d5bdae42092eec6502666412ad12}\label{class_map_a58b5d5bdae42092eec6502666412ad12} 
+\index{Map@{Map}!GetRechargeable@{GetRechargeable}}
+\index{GetRechargeable@{GetRechargeable}!Map@{Map}}
+\doxysubsubsection{\texorpdfstring{GetRechargeable()}{GetRechargeable()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interface_rechargeable}{Rechargeable}}? Map.\+Get\+Rechargeable (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+Responsável por incrementar a energia do robo conforme coletados itens válidos. 
+
+
+
+Definition at line \mbox{\hyperlink{_map_8cs_source_l00083}{83}} of file \mbox{\hyperlink{_map_8cs_source}{Map.\+cs}}.
+
+\Hypertarget{class_map_a6ff9fe11efd0d163cbf10277a29bb6a3}\label{class_map_a6ff9fe11efd0d163cbf10277a29bb6a3} 
+\index{Map@{Map}!Insert@{Insert}}
+\index{Insert@{Insert}!Map@{Map}}
+\doxysubsubsection{\texorpdfstring{Insert()}{Insert()}}
+{\footnotesize\ttfamily void Map.\+Insert (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_item_map}{Item\+Map}}}]{Item,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+Responsável por posicionar itens no mapa dentro da matriz. 
+
+
+
+Definition at line \mbox{\hyperlink{_map_8cs_source_l00029}{29}} of file \mbox{\hyperlink{_map_8cs_source}{Map.\+cs}}.
+
+\Hypertarget{class_map_a2107d47822831fb927575581bc107f85}\label{class_map_a2107d47822831fb927575581bc107f85} 
+\index{Map@{Map}!IsDone@{IsDone}}
+\index{IsDone@{IsDone}!Map@{Map}}
+\doxysubsubsection{\texorpdfstring{IsDone()}{IsDone()}}
+{\footnotesize\ttfamily bool Map.\+Is\+Done (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_map_8cs_source_l00134}{134}} of file \mbox{\hyperlink{_map_8cs_source}{Map.\+cs}}.
+
+\Hypertarget{class_map_a51d3486f7ca40a787a49125ef2e8809d}\label{class_map_a51d3486f7ca40a787a49125ef2e8809d} 
+\index{Map@{Map}!IsRadioactive@{IsRadioactive}}
+\index{IsRadioactive@{IsRadioactive}!Map@{Map}}
+\doxysubsubsection{\texorpdfstring{IsRadioactive()}{IsRadioactive()}}
+{\footnotesize\ttfamily bool Map.\+Is\+Radioactive (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+Booleana que verifica o item é Radioativo. 
+
+
+
+Definition at line \mbox{\hyperlink{_map_8cs_source_l00111}{111}} of file \mbox{\hyperlink{_map_8cs_source}{Map.\+cs}}.
+
+\Hypertarget{class_map_aff8e2d6feab4dea63ab4537c0898b303}\label{class_map_aff8e2d6feab4dea63ab4537c0898b303} 
+\index{Map@{Map}!Print@{Print}}
+\index{Print@{Print}!Map@{Map}}
+\doxysubsubsection{\texorpdfstring{Print()}{Print()}}
+{\footnotesize\ttfamily void Map.\+Print (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Imprime mapa. 
+
+
+
+Definition at line \mbox{\hyperlink{_map_8cs_source_l00118}{118}} of file \mbox{\hyperlink{_map_8cs_source}{Map.\+cs}}.
+
+\Hypertarget{class_map_a6559330c824d7967c0c6eb797583e4b9}\label{class_map_a6559330c824d7967c0c6eb797583e4b9} 
+\index{Map@{Map}!Update@{Update}}
+\index{Update@{Update}!Map@{Map}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Map.\+Update (\begin{DoxyParamCaption}\item[{int}]{x\+\_\+old,  }\item[{int}]{y\+\_\+old,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+Responsável por atualizar o Status do mapa. 
+
+
+
+Definition at line \mbox{\hyperlink{_map_8cs_source_l00036}{36}} of file \mbox{\hyperlink{_map_8cs_source}{Map.\+cs}}.
+
+
+
+\doxysubsection{Property Documentation}
+\Hypertarget{class_map_a719722cf9ff9a60065ba3189a64f121b}\label{class_map_a719722cf9ff9a60065ba3189a64f121b} 
+\index{Map@{Map}!h@{h}}
+\index{h@{h}!Map@{Map}}
+\doxysubsubsection{\texorpdfstring{h}{h}}
+{\footnotesize\ttfamily int Map.\+h\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Definition at line \mbox{\hyperlink{_map_8cs_source_l00006}{6}} of file \mbox{\hyperlink{_map_8cs_source}{Map.\+cs}}.
+
+\Hypertarget{class_map_a63b4597ab80572da3ea5def454b4eced}\label{class_map_a63b4597ab80572da3ea5def454b4eced} 
+\index{Map@{Map}!w@{w}}
+\index{w@{w}!Map@{Map}}
+\doxysubsubsection{\texorpdfstring{w}{w}}
+{\footnotesize\ttfamily int Map.\+w\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Definition at line \mbox{\hyperlink{_map_8cs_source_l00007}{7}} of file \mbox{\hyperlink{_map_8cs_source}{Map.\+cs}}.
+
+
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-Map.\+cs\end{DoxyCompactItemize}
+INF-\/0990/\mbox{\hyperlink{_map_8cs}{Map.\+cs}}\end{DoxyCompactItemize}

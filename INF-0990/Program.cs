@@ -19,9 +19,9 @@ public class JewelCollector {
 /// Método principal, inicia o jogo.
 /// </summary>
     public static void Main() {
-        int w = 11;
-        int h = 11;
-        int level = 2;
+        int w = 10;
+        int h = 10;
+        int level = 1;
 
         while(true)
         {

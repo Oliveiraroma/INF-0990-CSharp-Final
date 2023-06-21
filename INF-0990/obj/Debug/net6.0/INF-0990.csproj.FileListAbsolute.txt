@@ -43,3 +43,18 @@ C:/Users/Admin/Desktop/Projeto Final/INF-0990/obj/Debug/net6.0/ref/INF-0990.dll
 /Users/Matheus/workspace/inf0990_final_project_csharp/INF-0990/obj/Debug/net6.0/INF-0990.pdb
 /Users/Matheus/workspace/inf0990_final_project_csharp/INF-0990/obj/Debug/net6.0/INF-0990.genruntimeconfig.cache
 /Users/Matheus/workspace/inf0990_final_project_csharp/INF-0990/obj/Debug/net6.0/ref/INF-0990.dll
+c:\Programacao\Tecnologias Microsoft\INF-0990 - Programação em C#\Projeto Final\INF-0990-CSharp-Final\INF-0990\bin\Debug\net6.0\INF-0990.exe
+c:\Programacao\Tecnologias Microsoft\INF-0990 - Programação em C#\Projeto Final\INF-0990-CSharp-Final\INF-0990\bin\Debug\net6.0\INF-0990.deps.json
+c:\Programacao\Tecnologias Microsoft\INF-0990 - Programação em C#\Projeto Final\INF-0990-CSharp-Final\INF-0990\bin\Debug\net6.0\INF-0990.runtimeconfig.json
+c:\Programacao\Tecnologias Microsoft\INF-0990 - Programação em C#\Projeto Final\INF-0990-CSharp-Final\INF-0990\bin\Debug\net6.0\INF-0990.dll
+c:\Programacao\Tecnologias Microsoft\INF-0990 - Programação em C#\Projeto Final\INF-0990-CSharp-Final\INF-0990\bin\Debug\net6.0\INF-0990.pdb
+c:\Programacao\Tecnologias Microsoft\INF-0990 - Programação em C#\Projeto Final\INF-0990-CSharp-Final\INF-0990\obj\Debug\net6.0\INF-0990.csproj.AssemblyReference.cache
+c:\Programacao\Tecnologias Microsoft\INF-0990 - Programação em C#\Projeto Final\INF-0990-CSharp-Final\INF-0990\obj\Debug\net6.0\INF-0990.GeneratedMSBuildEditorConfig.editorconfig
+c:\Programacao\Tecnologias Microsoft\INF-0990 - Programação em C#\Projeto Final\INF-0990-CSharp-Final\INF-0990\obj\Debug\net6.0\INF-0990.AssemblyInfoInputs.cache
+c:\Programacao\Tecnologias Microsoft\INF-0990 - Programação em C#\Projeto Final\INF-0990-CSharp-Final\INF-0990\obj\Debug\net6.0\INF-0990.AssemblyInfo.cs
+c:\Programacao\Tecnologias Microsoft\INF-0990 - Programação em C#\Projeto Final\INF-0990-CSharp-Final\INF-0990\obj\Debug\net6.0\INF-0990.csproj.CoreCompileInputs.cache
+c:\Programacao\Tecnologias Microsoft\INF-0990 - Programação em C#\Projeto Final\INF-0990-CSharp-Final\INF-0990\obj\Debug\net6.0\INF-0990.dll
+c:\Programacao\Tecnologias Microsoft\INF-0990 - Programação em C#\Projeto Final\INF-0990-CSharp-Final\INF-0990\obj\Debug\net6.0\refint\INF-0990.dll
+c:\Programacao\Tecnologias Microsoft\INF-0990 - Programação em C#\Projeto Final\INF-0990-CSharp-Final\INF-0990\obj\Debug\net6.0\INF-0990.pdb
+c:\Programacao\Tecnologias Microsoft\INF-0990 - Programação em C#\Projeto Final\INF-0990-CSharp-Final\INF-0990\obj\Debug\net6.0\INF-0990.genruntimeconfig.cache
+c:\Programacao\Tecnologias Microsoft\INF-0990 - Programação em C#\Projeto Final\INF-0990-CSharp-Final\INF-0990\obj\Debug\net6.0\ref\INF-0990.dll

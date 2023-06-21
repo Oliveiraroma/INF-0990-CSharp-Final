@@ -35,7 +35,7 @@ public class Map{
     /// </summary>
     public void Update(int x_old, int y_old, int x, int y)
     {
-        if (x < 0 || y < 0 || x> this.w-1 || y> this.h-1)
+        if (x < 0 || y < 0 || x > this.w-1 || y > this.h-1)
         {
             Console.WriteLine($"\nOutOfMapException:x({x}) > w({this.w-1}) ou y({y}) > h({this.w-1})");
             throw new OutOfMapException();
@@ -52,11 +52,7 @@ public class Map{
             throw new OccupiedPositionException();
         }
     }
-
-    public bool isRadioactive(int x, int y)
-    {
-        return Matriz[x,y] is Radioactive;
-    }
+   
     /// <summary>
     /// Responsável por atualizar a quantidade de Jóias coletadas.
     /// </summary>
@@ -109,10 +105,28 @@ public class Map{
     private bool IsAllowed(int x, int y){
         return (Matriz[x, y] is Empty) || (Matriz[x, y] is Radioactive);
     }
+    /// <summary>
+    /// Booleana que verifica o item é Radioativo.
+    /// </summary>
+    public bool IsRadioactive(int x, int y)
+    {
+        return(Matriz[x, y] is Radioactive);
+    }
+    /// <summary>
+    /// Imprime mapa.
+    /// </summary>
     public void Print() {
+        Console.Clear();
         for (int i = 0; i < Matriz. GetLength(0); i++){
             for (int j = 0; j < Matriz.GetLength(1); j++){
-                Console.Write(Matriz[i, j]);
+                ItemMap item = Matriz[i, j];
+                ConsoleColor backgroundColor = item.GetBackgroundColor();
+                ConsoleColor foregroundColor = item.GetForegroundColor();
+
+                Console.BackgroundColor = backgroundColor;
+                Console.ForegroundColor = foregroundColor;
+                Console.Write(item);
+                Console.ResetColor();
             }
             Console.Write("\n");
         }
@@ -156,6 +170,7 @@ public class Map{
     /// </summary>
     private void GenerateRandom()
     {
+        Console.Clear();
         Random r = new Random(1);
         for(int x = 0; x < 3; x++)
         {
@@ -194,4 +209,5 @@ public class Map{
             this.Insert(new Radioactive(), xRandom, yRandom);
         }
     }
+    
 }

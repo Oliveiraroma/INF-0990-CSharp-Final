@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['update_0',['Update',['../class_map.html#a6559330c824d7967c0c6eb797583e4b9',1,'Map']]]
+  ['obstacle_0',['Obstacle',['../class_obstacle.html#a8835c8c949810ff2d75f031df65097ef',1,'Obstacle']]]
 ];
